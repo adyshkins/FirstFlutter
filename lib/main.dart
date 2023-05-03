@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz/row_column.dart';
-import 'my_container.dart';
+
 
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
@@ -16,23 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Quiz App',
       theme: ThemeData(primarySwatch: Colors.cyan),
-      home: MyContainer(),
+      home: HomePage(),
     );
   }
 }
 
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Тестирование'),
-      ),
-      body: Container(
-        child: const Center(
-          child: Text('Здест что-то будет'),
-        ),
-      ),
-    );
-  }
-}
+
